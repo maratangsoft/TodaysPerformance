@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/option_favorite"
+        android:title="북마크 추가"
+        android:icon="@drawable/ic_favorite_unfilled_24"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/option_ticket"
+        android:title="티켓팅"
+        android:icon="@drawable/ic_option_ticket"
+        app:showAsAction="always"/>
+</menu>

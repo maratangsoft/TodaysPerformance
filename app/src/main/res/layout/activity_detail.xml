@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DetailActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?colorPrimaryVariant"
+        app:title="공연 상세정보"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/iv_poster"
+                android:layout_width="120dp"
+                android:layout_height="160dp"
+                android:src="@drawable/error"
+                android:adjustViewBounds="true"
+                android:layout_marginEnd="10dp"/>
+
+            <TextView
+                android:id="@+id/tv_prfnm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="우리연애할까"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_toEndOf="@+id/iv_poster"/>
+
+            <TextView
+                android:id="@+id/tv_genrenm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="뮤지컬"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_toEndOf="@id/iv_poster"
+                android:layout_below="@+id/tv_prfnm"
+                android:layout_marginTop="4dp"/>
+
+            <TextView
+                android:id="@+id/tv_fcltynm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="피가로아트홀(구 훈아트홀) (피가로아트홀)"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_toEndOf="@id/iv_poster"
+                android:layout_below="@+id/tv_genrenm"
+                android:layout_marginTop="6dp"/>
+
+            <TextView
+                android:id="@+id/tv_prfpdfrom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="공연시작일: 2016.05.12"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/tv_fcltynm"
+                android:layout_marginTop="12dp"/>
+
+            <TextView
+                android:id="@+id/tv_prfpdto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="공연종료일: 2016.07.31"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/tv_prfpdfrom"
+                android:layout_marginTop="4dp"/>
+
+            <TextView
+                android:id="@+id/tv_prfcast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="출연진: 김부연, 임정균, 최수영"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_below="@+id/iv_poster"
+                android:layout_marginTop="16dp"/>
+
+            <TextView
+                android:id="@+id/tv_prfcrew"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="제작진: 천정민"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_below="@+id/tv_prfcast"
+                android:layout_marginTop="4dp"/>
+
+            <TextView
+                android:id="@+id/tv_prfruntime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="공연 런타임: 1시간 30분"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_below="@+id/tv_prfcrew"
+                android:layout_marginTop="4dp"/>
+
+            <TextView
+                android:id="@+id/tv_prfage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="공연 관람 연령: 만 12세 이상"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_below="@+id/tv_prfruntime"
+                android:layout_marginTop="4dp"/>
+
+            <TextView
+                android:id="@+id/tv_entrpsnm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="제작사: 극단 피에로"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_below="@+id/tv_prfage"
+                android:layout_marginTop="4dp"/>
+
+            <TextView
+                android:id="@+id/tv_pcseguidance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="티켓 가격: 전석 30,000원"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_below="@+id/tv_entrpsnm"
+                android:layout_marginTop="4dp"/>
+
+            <TextView
+                android:id="@+id/tv_dtguidance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="공연 시간: 화요일 ~ 금요일(20:00), 토요일(16:00,19:00), 일요일(15:00,18:00)"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_below="@+id/tv_pcseguidance"
+                android:layout_marginTop="4dp"/>
+
+            <ImageView
+                android:id="@+id/iv_styurl0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:layout_below="@+id/tv_dtguidance"
+                android:layout_marginTop="20dp"/>
+            <ImageView
+                android:id="@+id/iv_styurl1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:layout_below="@id/iv_styurl0"/>
+            <ImageView
+                android:id="@+id/iv_styurl2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:layout_below="@+id/iv_styurl1"/>
+            <ImageView
+                android:id="@+id/iv_styurl3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:layout_below="@+id/iv_styurl2"/>
+
+            <TextView
+                android:id="@+id/tv_sty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_below="@+id/iv_styurl3"
+                android:layout_marginTop="20dp"/>
+
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

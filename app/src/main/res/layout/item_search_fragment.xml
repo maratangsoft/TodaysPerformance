@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/item_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/item_iv_poster"
+        android:layout_width="78dp"
+        android:layout_height="104dp"
+        android:src="@color/purple_500"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/item_tv_prfnm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="우리집 강아지는 복슬강아지"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="19sp"
+        android:layout_toEndOf="@+id/item_iv_poster"
+        android:layout_marginStart="10dp"
+        android:maxLines="1"
+        android:ellipsize="end"/>
+
+    <TextView
+        android:id="@+id/item_tv_genrenm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="뮤지컬"
+        android:textSize="16sp"
+        android:layout_alignStart="@+id/item_tv_prfnm"
+        android:layout_below="@id/item_tv_prfnm"
+        android:layout_marginTop="6dp"/>
+
+    <TextView
+        android:id="@+id/item_tv_fcltynm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="예술의 전당"
+        android:textSize="16sp"
+        android:layout_alignStart="@+id/item_tv_prfnm"
+        android:layout_below="@id/item_tv_genrenm"
+        android:layout_marginTop="2dp"
+        android:maxLines="1"
+        android:ellipsize="end"/>
+
+    <TextView
+        android:id="@+id/item_tv_prfpdfrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2022-10-10 ~ "
+        android:textSize="16sp"
+        android:layout_alignStart="@+id/item_tv_prfnm"
+        android:layout_below="@+id/item_tv_fcltynm"
+        android:layout_marginTop="2dp"/>
+
+    <TextView
+        android:id="@+id/item_tv_prfpdto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2022-10-12"
+        android:textSize="16sp"
+        android:layout_toEndOf="@+id/item_tv_prfpdfrom"
+        android:layout_below="@+id/item_tv_fcltynm"
+        android:layout_marginTop="2dp"/>
+
+    <ImageView
+        android:id="@+id/item_btn_favorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_favorite_unfilled_24"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

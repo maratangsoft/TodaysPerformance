@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/bnv_search"
+        android:title="검색"
+        android:icon="@drawable/ic_bnv_search"/>
+
+    <item android:id="@+id/bnv_ranking"
+        android:title="순위"
+        android:icon="@drawable/ic_bnv_ranking"/>
+
+    <item android:id="@+id/bnv_favorite"
+        android:title="북마크"
+        android:icon="@drawable/ic_bnv_favorite"/>
+
+    <item android:id="@+id/bnv_setting"
+        android:title="설정"
+        android:icon="@drawable/ic_bnv_setting"/>
+
+</menu>
